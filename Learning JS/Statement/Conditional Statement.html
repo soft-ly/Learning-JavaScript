@@ -1,0 +1,25 @@
+<!-- 조건문 -->
+<!-- if(true/false)문으로 결과가 달라짐 -->
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body style="background-color: gray;">
+    <!-- <input type="button" value="Night" onclick="document.querySelector('body').style.backgroundColor = 'black';"> 
+    <input type="button" value="Day" onclick="document.querySelector('body').style.backgroundColor = 'white';">
+    <input type="button" value="Default" onclick=" document.querySelector('body').style.backgroundColor = 'gray';"> -->
+
+    <input class="ToggleDayNight" type="button" value="Night" onclick="
+    if(document.querySelector('.ToggleDayNight').value === 'Night'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('.ToggleDayNight').value = 'Day';
+    }
+        else{
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('.ToggleDayNight').value = 'Night';
+    }">
+
+    <!-- if 를 사용해서 한 버튼으로 바꾸기. -->
+</body>
+</html>

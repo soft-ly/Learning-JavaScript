@@ -1,0 +1,25 @@
+<!-- 정리하기 -->
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body style="background-color: gray;">
+    <input type="button" value="Night" onclick="
+    var target = document.querySelector('body').style
+    if(this.value === 'Night'){
+        target.backgroundColor = 'black';
+        this.value = 'Day';
+    }
+        else{
+        target.backgroundColor = 'white';
+        this.value = 'Night';
+    }">
+</body>
+</html>
+
+<!-- 중복된것들은 쉽게 줄이기...!
+target = ~~~긴문장 
+or 
+한 element에 대하여 다시 지정할때 this.~~를 사용해 더 간결하게 코딩하기.-->
