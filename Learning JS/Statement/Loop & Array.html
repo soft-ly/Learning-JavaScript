@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loop & Array</h1>
+    <script>
+        var coworkers = ['Me', 'YN', 'EG', 'AS', 'CV', 'CACACA'];
+
+    </script>
+    <h2>My Siblings</h2>
+    <ul>
+        <script>
+            var i = 0;
+            while(i<coworkers.length){
+                document.write('<li>'+coworkers[i]+'</li>');
+                // document.write('<li><a href="https://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>'); ----> A refined Version.
+                i++;
+            }
+            
+        </script>
+        <!-- <li>Me</li>
+        <li>YN</li>
+        <li>EG</li>
+        <li>AS</li>
+        <li>CV</li> -->
+        <!-- What if! there were 1 miilion of these lists?  ...(1) -->
+    </ul>
+</body>
+</html>
