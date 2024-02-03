@@ -15,3 +15,8 @@ HTML: Something we use to describe a page from our thoughts. This language descr
 
 JavaScipt: A language to interact with users. It needs to work in an orderly way. 
 1 -> 2 -> 3 -> ...
+
+
+tips: 중복은 극단적으로 봐야함
+연속적인 반복: 반복문
+불연속적인 반복: 함수

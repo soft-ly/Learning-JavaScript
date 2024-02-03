@@ -1,0 +1,58 @@
+<!-- 객체에 대하여 <정리정돈 툴>
+ -->
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script> 
+    function setColor(color){
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+            while(i < alist.length){
+                alist[i].style.color = color;
+                i++;
+            } 
+    }
+    function setFontColor(color){
+        document.querySelector('body').style.color = color;
+            } 
+    function setBGColor(color){
+        document.querySelector('body').style.backgroundColor = color;
+            }
+    function ntodHandler(self){
+        if(self.value === 'Night'){
+        setBGColor('black');
+        setFontColor('white');
+        setColor('powderblue');
+        self.value = 'Day';
+        }
+        else{
+        setBGColor('white');
+        setFontColor('black');
+        setColor('blue');
+        self.value = 'Night';
+        }
+    }
+    </script>
+</head>
+<body style="background-color: white;">
+    <input type="button" value="Night" onclick="ntodHandler(this);">
+
+    <h1><a href="/Users/yukeek./Desktop/Learning JS/IMG/Untitled.png">Apostles Creed</a></h1>
+       I believe in God<a href="https://www.biblestudytools.com/encyclopedias/isbe/god-1.html">[1]</a><a href="https://www.biblestudytools.com/encyclopedias/isbe/god-2.html">[2]</a><a href="https://www.biblestudytools.com/encyclopedias/isbe/god-3.html">[3]</a> the Father Almighty, the Maker of heaven and earth, <br>
+    and in <a href="https://www.biblestudytools.com/encyclopedias/isbe/jesus.html">Jesus Christ</a>,
+     His only Son, our Lord: <br>
+    Who was conceived by the Holy Ghost, born of the virgin Mary, <br> 
+    suffered under Pontius Pilate, was crucified, dead, and buried; <br>
+    The third day He arose again from the dead; <br>
+    He ascended into heaven, and sitteth on the right hand of God the Father Almighty;<br>
+    from thence he shall come to judge the living and the dead.<br>
+    I believe in the Holy Spirit; the holy catholic church; <br>
+    the communion of saints; the forgiveness of sins; <br>
+    the resurrection of the body; and the life everlasting.<br>
+    <h2> Amen </h2>
+
+</body>
+</html>
