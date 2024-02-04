@@ -1,58 +1,36 @@
-<!-- 객체에 대하여 <정리정돈 툴>
- -->
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <script> 
-    function setColor(color){
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-            while(i < alist.length){
-                alist[i].style.color = color;
-                i++;
-            } 
-    }
-    function setFontColor(color){
-        document.querySelector('body').style.color = color;
-            } 
-    function setBGColor(color){
-        document.querySelector('body').style.backgroundColor = color;
-            }
-    function ntodHandler(self){
-        if(self.value === 'Night'){
-        setBGColor('black');
-        setFontColor('white');
-        setColor('powderblue');
-        self.value = 'Day';
-        }
-        else{
-        setBGColor('white');
-        setFontColor('black');
-        setColor('blue');
-        self.value = 'Night';
-        }
-    }
-    </script>
 </head>
-<body style="background-color: white;">
-    <input type="button" value="Night" onclick="ntodHandler(this);">
-
-    <h1><a href="/Users/yukeek./Desktop/Learning JS/IMG/Untitled.png">Apostles Creed</a></h1>
-       I believe in God<a href="https://www.biblestudytools.com/encyclopedias/isbe/god-1.html">[1]</a><a href="https://www.biblestudytools.com/encyclopedias/isbe/god-2.html">[2]</a><a href="https://www.biblestudytools.com/encyclopedias/isbe/god-3.html">[3]</a> the Father Almighty, the Maker of heaven and earth, <br>
-    and in <a href="https://www.biblestudytools.com/encyclopedias/isbe/jesus.html">Jesus Christ</a>,
-     His only Son, our Lord: <br>
-    Who was conceived by the Holy Ghost, born of the virgin Mary, <br> 
-    suffered under Pontius Pilate, was crucified, dead, and buried; <br>
-    The third day He arose again from the dead; <br>
-    He ascended into heaven, and sitteth on the right hand of God the Father Almighty;<br>
-    from thence he shall come to judge the living and the dead.<br>
-    I believe in the Holy Spirit; the holy catholic church; <br>
-    the communion of saints; the forgiveness of sins; <br>
-    the resurrection of the body; and the life everlasting.<br>
-    <h2> Amen </h2>
+<body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+        var coworkers = {
+            "programmer":"egoing",
+            "designer":"leezche"
+        }; //<-- 객체 
+        document.write("programmer : "+coworkers.programmer+"<br>" );
+        document.write("designer : "+coworkers.designer+"<br>" );
+        coworkers.bookkeeper = "duru";
+        document.write("bookkeeper : "+coworkers.bookkeeper+"<br>" );
+        coworkers["data scientist"] = "taeho";
+        document.write("data scientist "+coworkers["data scientist"]+"<br>");
+    </script>
+    <h2>Iterate</h2>
+    <script>
+        for (var key in coworkers) {
+            document.write(key+' : '+coworkers[key]+'<br>');   
+        }
+    </script>
 
 </body>
 </html>
+<!-- 
+    정리:
+    배열: 정보를 담는 그릇이면서 동시에 정보가 순서대로 정보가 저장됨.
+    함수
+    객체: 정보를 담는 그릇이면서 동시에 정보가 순서없이 정보가 저장됨.
+ -->
